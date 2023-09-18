@@ -1,5 +1,7 @@
 # Search Movies Project
 
+Deployed version: [https://search-movies-pi.vercel.app/](https://search-movies-pi.vercel.app/)
+
 ### Instructions for run the App
 
 1. Before run the project you must install dependencies
@@ -25,5 +27,6 @@ npm run preview
 
 ### Tech Stack
 
-> - API Used to fetch movies: [omdbapi](https://www.omdbapi.com)
+> - API Used to fetch movies [omdbapi](https://www.omdbapi.com)
 > - Build tooling [vite.js](https://vitejs.dev)
+> - Cloud host [vercel](https://vercel.com)
