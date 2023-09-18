@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Please answer the following questions to the best of your knowledge&comma; in clear English&period;</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="please-answer-the-following-questions-to-the-best-of-your-knowledge-in-clear-english">Please answer the following questions to the best of your knowledge, in clear English.</h1>
+<p>Elaborate and try to demonstrate the React knowledge you have. Feel free
+to give examples and use cases. DO NOT USE ANY WEB OR OTHER RESOURCE.</p>
+<ol>
+<li>What is the difference between Component and PureComponent? Give
+an example where it might break my app.</li>
+</ol>
+<blockquote>
+<p>A PureComponent dispatch a re-render only when he state suffer a change.</p>
+</blockquote>
+<ol start="2">
+<li>Context + ShouldComponentUpdate might be dangerous. Why is that?</li>
+</ol>
+<blockquote>
+<p>To be honest, I truly don't remember because im not been using Class Components in a while,
+But I assume it is possibly dangerous attach a LifeCycleHook to the state management.
+That probably ends with several unnecessary re-renders.</p>
+</blockquote>
+<ol start="3">
+<li>Describe 3 ways to pass information from a component to its PARENT.</li>
+</ol>
+<blockquote>
+<ul>
+<li>Via regular props with a callback.</li>
+<li>With a Context</li>
+<li>Using a state management library like Redux or Zustand</li>
+</ul>
+</blockquote>
+<ol start="4">
+<li>Give 2 ways to prevent components from re-rendering.</li>
+</ol>
+<blockquote>
+<ul>
+<li>You can use <code>useMemo()</code> or <code>useCallback()</code> to prevent recalculate a values or a callbacks and prevent the re-render effect.</li>
+<li>Attached to a single state you can use <code>useRef()</code>. Give the chance of update the state without re-renders.</li>
+</ul>
+</blockquote>
+<ol start="5">
+<li>What is a fragment and why do we need it? Give an example where it might
+break my app.</li>
+</ol>
+<blockquote>
+<p>Fragment is a solution that React provides for wrap elements. Because components are functions, must have only one return element.</p>
+</blockquote>
+<pre><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">HelloComponent</span>(<span class="hljs-params"></span>) {
+ <span class="hljs-keyword">return</span> (
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>
+   <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>How are you?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span>
+ )
+}
+</code></pre>
+<ol start="6">
+<li>Give 3 examples of the HOC pattern.</li>
+</ol>
+<blockquote>
+<p>I'll provide the most simple example of the code in one example but this pattern is super helpful in a lot of scenarios:</p>
+<ul>
+<li>For attach logic like a loading</li>
+<li>Handle a theme style</li>
+<li>Add logger actions</li>
+</ul>
+</blockquote>
+<pre><code class="language-js"><span class="hljs-keyword">const</span> <span class="hljs-title function_">withGreetings</span> = <span class="hljs-title class_">Component</span> =&gt; {
+  <span class="hljs-keyword">class</span> <span class="hljs-title class_">HOC</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">React.Component</span> {
+    <span class="hljs-title function_">super</span>(<span class="hljs-params"></span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">props</span>()
+    }
+    <span class="hljs-title function_">render</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">return</span> <span class="language-xml"><span class="hljs-tag">&lt;&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">Component</span> {<span class="hljs-attr">...this.props</span>} /&gt;</span>
+        <span class="hljs-tag">&lt;/&gt;</span></span>
+    }
+  }
+  <span class="hljs-keyword">return</span> <span class="hljs-variable constant_">HOC</span>
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">Name</span> = (<span class="hljs-params">{ name }</span>) =&gt; <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{name}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">NameWithGreetings</span> = <span class="hljs-title function_">withGreetings</span>(<span class="hljs-title class_">Name</span>)
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">App</span> = (<span class="hljs-params"></span>) =&gt; (
+  <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;App&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">NameWithGreetings</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&#x27;eze&#x27;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+)
+</code></pre>
+<ol start="7">
+<li>What's the difference in handling exceptions in promises, callbacks
+and async...await?</li>
+</ol>
+<blockquote>
+<p>When an exception was thrown inside a regular callback you can't handle that error, the execution stop. In promises you can catch exceptions with <code>.catch()</code> function and this don't stop the execution. With <code>async...await</code> you must wrap the code in <code>try...catch</code> statement for handle the exception.</p>
+</blockquote>
+<ol start="8">
+<li>How many arguments does setState take and why is it async.</li>
+</ol>
+<blockquote>
+<p><code>setState()</code> it's the setter function for <code>useState()</code> hook. You can pass one argument, a regular value or a callback. When you pass a regular value, this overrides the previous state. When you pass a callback you'got the previous state on the callback argument and that allows you to reuse that previous state for increase a number.</p>
+</blockquote>
+<ol start="9">
+<li>List the steps needed to migrate a Class to Function Component.</li>
+</ol>
+<blockquote>
+<ul>
+<li>You must migrate the lifecycle hooks for react hooks like <code>useEffect()</code></li>
+<li>You must remove the <code>this</code></li>
+<li>You must remove the <code>super()</code> for the initial props, now are passed by function param</li>
+<li>You don't have a <code>render()</code> function anymore, instead must use the regular return of the function</li>
+</ul>
+</blockquote>
+<ol start="10">
+<li>List a few ways styles can be used with components.</li>
+</ol>
+<blockquote>
+<ul>
+<li>You can use regular module import css on each component</li>
+<li>You can use a preprocessed css like SASS, that allows you to handle imports between css and then import in each component</li>
+<li>You can use <code>styled-components</code> for extends stiles between components.</li>
+<li>External library like Tailwind.css</li>
+</ul>
+</blockquote>
+<ol start="11">
+<li>How to render an HTML string coming from the server.</li>
+</ol>
+<blockquote>
+<p>I don't know if this solution is the best using react but with <code>DOMparser()</code> object you can create the DOM from string. I recently used with nodejs but honestly I don't know if is the best solution for react.</p>
+</blockquote>
+<p>Results need to be submitted in a <a href="http://questions.html">questions.md</a> file, in the same
+zipped repo as part 1.</p>
+
+        
+        
+    </body>
+    </html>

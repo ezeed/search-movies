@@ -1,6 +1,10 @@
-# Search Movies Project
+# CHALLENGE PART 1
 
-Deployed version: [https://search-movies-pi.vercel.app/](https://search-movies-pi.vercel.app/)
+### Search Movies Project
+
+Deployed version: [https://autocomplete-movies.vercel.app/](https://autocomplete-movies.vercel.app/)
+
+The 
 
 ### Instructions for run the App
 
@@ -14,7 +18,7 @@ npm i
 npm run dev
 ```
 
-3. After run dev command you can enter to [http://localhost:5173](http://localhost:5173) to use the app.
+3. After run dev command you can enter to [http://localhost:9090](http://localhost:9090) to use the app.
 
 4. For preview production build run this commands
 ```js
@@ -22,7 +26,7 @@ npm run build
 npm run preview
 ```
 
-5. You can use the same url on local host to test the production build on local. [http://localhost:5173](http://localhost:5173).
+5. You can use the same url on local host to test the production build on local. [http://localhost:9090](http://localhost:9090).
 
 
 ### Tech Stack
@@ -30,3 +34,11 @@ npm run preview
 > - API Used to fetch movies [omdbapi](https://www.omdbapi.com)
 > - Build tooling [vite.js](https://vitejs.dev)
 > - Cloud host [vercel](https://vercel.com)
+
+
+# CHALLENGE PART 2
+
+The answers of the questionary are in `/answers` folder in Markdown and HTML format.
+Additionally you can navigate to the answers in local or production:
+- [Local](http://localhost:9090/answers.html)
+- [Deployed](https://autocomplete-movies.vercel.app/answers.html)
