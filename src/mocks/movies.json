@@ -1,0 +1,76 @@
+{
+  "Search": [
+    {
+      "Title": "Alita: Battle Angel",
+      "Year": "2019",
+      "imdbID": "tt0437086",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTQzYWYwYjctY2JhZS00NTYzLTllM2UtZWY5ZTk0NmYwYzIyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Angel Has Fallen",
+      "Year": "2019",
+      "imdbID": "tt6189022",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYmRmMWZhZGItYzA4MC00ZDYyLWE0OTMtYmM0MWRiN2Q4NGU2XkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Angel Heart",
+      "Year": "1987",
+      "imdbID": "tt0092563",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZmQ3Mzg3YjgtNTA1Zi00ODgyLTkyZGUtYTE5NDA5ZmI4NjI1L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Angel",
+      "Year": "1999–2004",
+      "imdbID": "tt0162065",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BODU0M2NjZjgtZmQ1Zi00OWIyLTg1ODctMTg4Njg0MmE5YzU4XkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Angel-A",
+      "Year": "2005",
+      "imdbID": "tt0473753",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZGMxOTMyYTktODNkZS00NmY5LWI0NmMtYWE4OGRiY2M2ZTA0XkEyXkFqcGdeQXVyMTMxMTY0OTQ@._V1_SX300.jpg"
+    },
+    {
+      "Title": "The Exterminating Angel",
+      "Year": "1962",
+      "imdbID": "tt0056732",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZTg3M2ExY2EtZmI5Yy00YWM1LTg4NzItZWEzZTgxNzE2MjhhXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Dark Angel",
+      "Year": "2000–2002",
+      "imdbID": "tt0204993",
+      "Type": "series",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNThlYzVmMGEtOGY1OS00NTdjLTkwYmItOWRiNTYwNDJiNGY3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg"
+    },
+    {
+      "Title": "The Woman in Black 2: Angel of Death",
+      "Year": "2014",
+      "imdbID": "tt2339741",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTgxMjUyNTAxNF5BMl5BanBnXkFtZTgwNTk4MDUyMzE@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Angel Eyes",
+      "Year": "2001",
+      "imdbID": "tt0225071",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNDQwNzI2OTY2Ml5BMl5BanBnXkFtZTYwOTI3ODc5._V1_SX300.jpg"
+    },
+    {
+      "Title": "The Blue Angel",
+      "Year": "1930",
+      "imdbID": "tt0020697",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZTI4OTkzOWYtZjhiMi00YTYzLThkYWUtMWMwNmQzOTkxOGU3XkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SX300.jpg"
+    }
+  ],
+  "totalResults": "1953",
+  "Response": "True"
+}

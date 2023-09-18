@@ -1,0 +1,35 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --main-contrast: #FFF200;
+  --main-light: #F5F5F5;
+  --main-middle: #D6E6F2;
+  --main-dark: #303841;
+  --main-error: rgb(245, 111, 111);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--main-dark);
+    background-color: var(--main-light);
+  }
+}

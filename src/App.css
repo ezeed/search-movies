@@ -1,0 +1,20 @@
+.container {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.search-box {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--main-middle);
+  border-radius: .5rem;
+}
+
+.error {
+  color: var(--main-error);
+}

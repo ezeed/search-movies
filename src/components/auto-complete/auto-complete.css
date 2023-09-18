@@ -1,0 +1,40 @@
+.auto-complete {
+  padding: 0;
+  margin: 0;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0px 3px 10px 0px silver;
+  min-width: 15rem;
+  max-width: 35rem;
+  background-color: var(--main-light);
+  color: var(--main-dark);
+}
+
+.auto-complete li {
+  list-style-type: none;
+  padding: .5rem;
+}
+
+.auto-complete li:hover {
+  background-color: var(--main-middle);
+  cursor: pointer;
+}
+
+.auto-complete li:last-of-type {
+  padding: 0;
+  margin: 0;
+}
+
+.auto-complete button {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: .4rem;
+  display: block;
+  color: var(--main-dark);
+}
+
+.auto-complete button:hover {
+  background-color: var(--main-middle);
+}
