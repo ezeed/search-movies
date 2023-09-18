@@ -4,8 +4,6 @@
 
 Deployed version: [https://autocomplete-movies.vercel.app/](https://autocomplete-movies.vercel.app/)
 
-The 
-
 ### Instructions for run the App
 
 1. Before run the project you must install dependencies
